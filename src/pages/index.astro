@@ -8,52 +8,95 @@ import "../styles/global.css";
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Dev Project</title>
+		<title>Manasvi Sharma - About Me</title>
 	</head>
 	<body>
-		<h1 class="font-bold m-[10px]">Hello WiCS Dev Project</h1>
-
+		
+		<h1 class="font-bold m-[10px]">Task 1 - Frontend Manasvi Sharma</h1>
 		<div class="w-[40px] border"></div>
-
-		<h1 class="font-bold text-3xl m-5">WiCS Dev Project: Spring 2025</h1>
+		<h1 class="font-bold text-3xl m-5 text-center">About me!</h1>
 
 		<nav>
-			<a class="m-5 link" href="#food">Food</a>
-			<a class="m-5 link" href="#places">Places</a>
-			<a class="m-5 link" href="#colors">Colors</a>
+			<a class="hobby link" href="#hobbys">   Hobbys   </a>
+			
+			<a class="colors link" href="#colors">   Colors   </a>
+
+			<a class="music link" href="#musicartists">   Artists   </a>
+
+			<a class="season link" href="#seasons">   Season   </a>
+
+			<a class="season link" href="#recently">   Recently   </a>
+
+
+
+
 		  </nav>
 		<div class="flex flex-col">
-			<h1 class="font-bold text-2xl m-5">My Favorite Foods</h1>
-			<div class="flex flex-row" id="food">
+			<h1 class="font-bold text-2xl m-5 color-white text-center">My Hobbys</h1>
+			<div class="flex flex-row flex justify-center" id="hobbys">
 				<ul class="text-2xl border-2 w-fit p-4 m-5">
-					<li>Sushi</li>
-					<li>Pizza</li>
-					<li>Buggers</li>
+					<li>Photography</li>
 				</ul>
 				<ul class="text-2xl border-2 w-fit p-4 m-5">
-					<li>Bread</li>
-					<li>Butter</li>
-					<li>Cheese</li>
+					<li>Gaming</li>
 				</ul>
 				<ul class="text-2xl border-2 w-fit p-4 m-5">
-					<li>Broccoli</li>
-					<li>Carrots</li>
-					<li>Muffins</li>
+					<li>Painting</li>
 				</ul>
-			</div>
-			<h1 class="font-bold text-2xl m-5">My Favorite Places</h1>
-			<div class="flex flex-col" id="places">
-				<img class="m-5 w-[200px]" src="/assets/egypt.jpg"/>
-				<img class="m-5 w-[200px]" src="/assets/paris.jpg"/>
-				<img class="m-5 w-[200px]" src="/assets/florida.jpg"/>
 			</div>
 
-			<h1 class="font-bold text-2xl m-5">My Favorite Colors</h1>
-			<div class="flex flex-row" id="colors">
-				<div class="color m-5 bg-amber-400"></div>
-				<div class="color m-5 bg-red-400"></div>
+			<h1 class="font-bold text-2xl m-5 text-center">Favorite Artists</h1>
+			<div class="flex flex-row flex justify-center" id="musicartists">
+				<ul class="text-2xl border-2 w-fit p-4 m-5">
+					<li>The Marias</li>
+				</ul>
+				<ul class="text-2xl border-2 w-fit p-4 m-5">
+					<li>TXT</li>
+				</ul>
+				<ul class="text-2xl border-2 w-fit p-4 m-5">
+					<li>Lana Del Ray</li>
+				</ul>
+				
+			</div>
+
+			<h1 class="font-bold text-2xl m-5 text-center">Favorite Season</h1>
+			<div class="flex flex-row justify-center" id="seasons">
+				<img class="m-6 w-[100px]" src="public/assets/cute-sun-doodle-free-png.webp"/>
+				<ul class="text-2xl border-2 w-fit p-4 m-5">
+					<li>Summer</li>
+				</ul>
+				<ul class="text-2xl border-2 w-fit p-4 m-5">
+					<li>Spring</li>
+				</ul>
+				<img class="m-6 w-[100px]" src="public/assets/flowerpng.jpg"/>
+
+			</div>
+
+			<h1 class="font-bold text-2xl m-5 text-center">Recently</h1>
+			<div class="flex flex-row flex justify-center" id="recently">
+				<img class="m-6 w-[300px]" src="public/assets/20241230_005436_1BF58C.jpeg"/>
+				<img class="m-6 w-[300px]" src="public/assets/20241221_190629_68348A.jpeg"/>
+				<img class="m-6 w-[300px]" src="public/assets/IMG_2489.JPG"/>
+			</div>
+
+			<h1 class="font-bold text-2xl m-5 text-center">My Favorite Colors</h1>
+			<div class="flex flex-row justify-center" id="colors">
+				<div class="color m-5 bg-purple-400"></div>
+				<div class="color m-5 bg-pink-400"></div>
 				<div class="color m-5 bg-blue-400"></div>
 			</div>
+
+			<div class="flex flex-row justify-center">
+				<img class="m-6 w-[500px]" src="public/assets/floral banner.png"/>
+				<div class="flex flex-row justify-start">
+					<img class="m-6 w-[500px]" src="public/assets/floral banner.png"/>
+				</div>
+				<div class="flex flex-row justify-end">
+					<img class="m-6 w-[500px]" src="public/assets/floral banner.png"/>
+				</div>
+			</div>
+			
+			
 			
 		</div>
 		<!-- <button class="bg-blue-100 rounded-md p-2 m-5 cursor-pointer variant-default">Generate Number</button> -->
@@ -65,10 +108,25 @@ import "../styles/global.css";
 		color: blue;
 	}
 
+	.flex-col{
+		background-color: rgba(45, 32, 126, 0.656);
+	}
+
+	.font-bold{
+		background-color:rgb(195, 210, 239);
+	}
+
+	.font-bold{
+		color:darkslategrey;
+	}
 	.color {
 		width: 100px;
 		height: 100px;
 		border: 1px solid black;
 		border-radius: 50%;
+	}
+
+	.flex-col{
+		color:azure;
 	}
 </style>
